@@ -12,7 +12,7 @@ pipeline {
                     '''
                 }
                 script {
-                    powershell '''C:\\my-script.ps1'''
+                    powershell '''./jenkins/scripts/script-hello.ps1'''
                 }
             }
         }
