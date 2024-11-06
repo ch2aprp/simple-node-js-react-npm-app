@@ -5,7 +5,7 @@ pipeline {
             steps {
                 bat 'npm install'
                 script {
-                    powersheel 
+                    powershell 
                     ''' 
                     Write-Output "Hello World!"
                     $date = Get-Date
@@ -13,7 +13,7 @@ pipeline {
                     '''
                 }
                 script {
-                    powersheel '''./scripts/script-hello.ps1'''
+                    powershell '''./scripts/script-hello.ps1'''
                 }
             }
         }
