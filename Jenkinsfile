@@ -4,8 +4,6 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'npm install'
-            }
-            steps {
                 script {
                     powersheel 
                     ''' 
@@ -14,8 +12,6 @@ pipeline {
                     Write-Output "Current Date and time : $date"
                     '''
                 }
-            }
-            steps {
                 script {
                     powersheel '''./scripts/script-hello.ps1'''
                 }
